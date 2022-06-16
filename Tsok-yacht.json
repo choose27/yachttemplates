@@ -1,0 +1,50 @@
+[
+  {
+    "title": "HomeBridge",
+    "name": "homebridge",
+    "image": "ozone/homebridge:latest",
+    "description": "Homekit compatibility for all.",
+    "categories": [
+      "Home Automation"
+    ],
+    "platform": "linux",
+    "note": "",
+    "restart_policy": "always",
+    "ports": [],
+    "volumes": [
+      {
+        "container": "/homebridge",
+        "bind": "!homebridgeconfig"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+        "default": "100"
+      },
+      {
+        "name": "TZ",
+        "default": "!TZ"
+      },
+      {
+        "name": "HOMEBRIDGE_CONFIG_UI",
+        "default": "1"
+      },
+      {
+        "name": "HOMEBRIDGE_CONFIG_UI_PORT",
+        "default": "8087"
+      }
+    ],
+    "command": [],
+    "devices": [],
+    "labels": [],
+    "sysctls": [],
+    "cap_add": [],
+    "logo": "https://github.com/homebridge/branding/blob/master/logos/homebridge-color-square.png?raw=true",
+    "network_mode": "host"
+  }
+]
