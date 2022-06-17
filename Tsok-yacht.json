@@ -2,7 +2,7 @@
   {
     "title": "HomeBridge",
     "name": "homebridge",
-    "image": "ozone/homebridge:latest",
+    "image": "oznu/homebridge:latest",
     "description": "Homekit compatibility for all.",
     "categories": [
       "Home Automation"
